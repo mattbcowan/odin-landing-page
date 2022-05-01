@@ -11,7 +11,7 @@ html {
 }
 
 *, *:before, *:after {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     box-sizing: inherit;
     margin: 0;
@@ -21,9 +21,9 @@ html {
 .nav-container {
     display: flex;
     background-color: var(--dark-blue);
-    padding: 16px;
+    padding: 24px;
     flex: 1;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header-logo {
@@ -41,4 +41,85 @@ html {
 .nav-list li a {
     color: var(--off-white);
     text-decoration: none;
+}
+
+/* SECTIONS */
+
+.hero-image {
+    height: 240px;
+    width: auto;
+    background-color: darkgray;
+}
+
+.section {
+    padding-top: 48px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-container, .section-container-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    flex: 1;
+    max-width: 968px;
+}
+
+.section-container-column {
+    flex-direction: column;
+}
+
+.section-container div {
+    flex: 1;
+}
+
+.blue-bg {
+    padding-top: 80px;
+    background-color: var(--dark-blue);
+}
+
+/* COMPONENTS */
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white)
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue)
+}
+
+.subhead {
+    color: var(--off-white);
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--mid-blue);
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.gallery-container {
+    max-width: 172px;
+}
+
+.gallery-image {
+    width: 172px;
+    height: 172px;
+    border: 4px solid var(--mid-blue);
+    border-radius: 16px;
+}
+
+.gallery-image-caption {
+    color: var(--black);
+    text-align: center;
+    margin-top: 8px;
 }

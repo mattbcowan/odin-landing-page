@@ -75,6 +75,15 @@ html {
     flex: 1;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
 .blue-bg {
     padding-top: 80px;
     background-color: var(--dark-blue);

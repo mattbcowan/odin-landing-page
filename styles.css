@@ -90,13 +90,19 @@ html {
 h1 {
     font-size: 48px;
     font-weight: 700;
-    color: var(--white)
+    color: var(--white);
+    margin: 0;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 700;
     color: var(--dark-blue)
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 blockquote {
@@ -114,15 +120,25 @@ figcaption {
 
 .subhead {
     color: var(--off-white);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.btn-primary, .btn-inverted {
+    padding: 8px 32px;
+    border-radius: 8px;
 }
 
 .btn-primary {
     color: var(--white);
     background-color: var(--mid-blue);
-    padding: 8px 32px;
     border: none;
-    border-radius: 8px;
-    margin-top: 16px;
+}
+
+.btn-inverted {
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
 }
 
 .gallery-container {
@@ -140,4 +156,21 @@ figcaption {
     color: var(--black);
     text-align: center;
     margin-top: 8px;
+}
+
+.cta-card {
+    background-color: var(--mid-blue);
+    border-radius: 12px;
+    color: var(--white);
+    display: flex;
+    padding: 48px 96px;
+    flex: 1;
+}
+
+.cta-card .cta-text-wrapper {
+    flex: 3;
+}
+
+.cta-card .cta-button-wrapper {
+    flex: 1;
 }

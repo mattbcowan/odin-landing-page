@@ -145,6 +145,10 @@ figcaption {
     flex: 1;
 }
 
+.cta-text-wrapper p {
+    color: var(--off-white);
+}
+
 /* FOOTER */
 
 .footer {
